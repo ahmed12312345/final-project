@@ -1,0 +1,15 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Example of form validation using jQuery -->
+<script>
+$(document).ready(function() {
+    $('#postForm').submit(function(event) {
+        var title = $('#title').val();
+        var content = $('#content').val();
+        if (title == '' || content == '') {
+            alert('Please fill in all fields');
+            event.preventDefault();
+        }
+    });
+});
+</script>

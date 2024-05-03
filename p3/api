@@ -1,0 +1,17 @@
+from flask_restful import Api, Resource
+
+api = Api(app)
+
+# Define API resource
+class PostAPI(Resource):
+    @login_required
+    def get(self)
+        pass
+
+    @login_required
+    def post(self):
+        # Add a new post
+        pass
+
+
+api.add_resource(PostAPI, '/api/posts')
